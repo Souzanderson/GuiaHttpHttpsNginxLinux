@@ -139,15 +139,11 @@ server {
             server_name  localhost 127.0.0.1;
             client_max_body_size 2048M;
             
-            location ^~ / {
-                proxy_pass  "http://0.0.0.0:5001/";
-                add_header Last-Modified $date_gmt;
-                add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
-                if_modified_since off;
-                expires off;
-                etag off;
-                }
-        }
+            location /api {
+                            proxy_pass  "http://0.0.0.0:5001/";
+                            proxy_set_header    X-Forwarded-For $remote_addr;
+                       }
+        }   
 ```
 
 * Salve o arquivo usando **CTRL+S** e feche usando **CTRL+X**, e vamos reiniciar o nginx:
