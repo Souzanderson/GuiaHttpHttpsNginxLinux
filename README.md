@@ -97,7 +97,7 @@ systemctl status flaskservice
 * Para ver o log da nossa aplicação:
 
 ```bash
-journalctl -u test -f
+journalctl -u flaskservice -f
 ```
 
 Agora nossa aplicação está rodando como serviço, é possível configurar outras coisas, como watchdogs para reiniciá-la periódicamente,
