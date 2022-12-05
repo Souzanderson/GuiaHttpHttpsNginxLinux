@@ -169,7 +169,7 @@ vamos gerar certificados válidos:
 
 ```bash
 sudo apt-get -y install snapd
-snap install core
+sudo snap install core
 sudo snap refresh core
 ```
 
