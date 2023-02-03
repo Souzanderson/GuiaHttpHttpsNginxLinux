@@ -86,6 +86,7 @@ com os seguintes comandos:
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl start flaskservice
+sudo systemctl enable flaskservice
 ```
 
 * Se nenhum erro foi emitido no prompt, nosso aplicativo está rodando como serviço, para vê-lo executando:
