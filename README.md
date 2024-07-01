@@ -252,7 +252,7 @@ direcionado para ele. Exemplo, supondo que o IP do servidor é **https://<seu_do
 * Para instalar o Node na versão 18, basta atualizar o pacote principal:
   
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -  # Para Ubuntu
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -  # Para Ubuntu
 sudo apt-get install -y nodejs  # Para Ubuntu
 sudo yum install -y nodejs  # Para Amazon Linux
 ```
