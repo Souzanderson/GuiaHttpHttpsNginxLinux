@@ -246,3 +246,15 @@ systemctl status nginx
 * Se tudo estiver correto, nosso servidor agora está direcionado para atender chamadas http/https para 
 o nosso aplicativo flask na rota principal. Basta abrir o navegador e digitar o domínio
 direcionado para ele. Exemplo, supondo que o IP do servidor é **https://<seu_domínio__aqui.com>**.
+
+## Instalando o Node na versão 18 no Ubuntu
+
+* Para instalar o Node na versão 18, basta atualizar o pacote principal:
+  
+```bash
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -  # Para Ubuntu
+sudo apt-get install -y nodejs  # Para Ubuntu
+sudo yum install -y nodejs  # Para Amazon Linux
+```
+
+  
